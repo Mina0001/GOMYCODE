@@ -2,34 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html checkpoint</title>
 </head>
 <body>
-    <header>
-        <H2><a name="Home"></a><b>Website.Name</b></H2> 
-        
-        <nav>
-            <a href="#Home"> home</a> 
-            <a href="#About"> about </a>
-            <a href="#work"> work</a>
-            <a href="#resume"> resume</a>
-            <a href="#contact"> contact</a>
+    <header class="box1">
+        <div class="box3"><span id="webname"><H2><a name="Home"></a><b>Website.Name</b></H2></span></div> 
+        <nav class="box2">
+            <a href="#Home">home</a> 
+            <a href="#About">about </a>
+            <a href="#work">work</a>
+            <a href="#resume">resume</a>
+            <a href="#contact">contact</a>
         </nav>
+       
     </header>
 <br>
 <main>
     <!-- section about -->
-<section>
-    <div>
+<section class="about">
+    <div class="about1">
         <h2><a name="About"> </a>About Artist</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempora vero architecto. Aliquam architecto a nisi ut fugiat error saepe expedita. Nesciunt dolore exercitationem temporibus delectus facere ducimus asperiores vel!</p>
 </div>
-<div>
-    <video autoplay src="video-1.mp4">Intro video</video>
+<div class="about2">
+    <video autoplay src="video-1.mp4" height="300px" width="400px">Intro video</video>
 </div>
-    <div>
+    <div class="about3">
         <ol>
             <li>information1</li>
             <li>information2</li>
@@ -38,7 +40,7 @@
     </div>
 </section>
 <!-- Section work -->
-<section>
+<section class="work">
     <div>
       <h2><a name="work"> </a>First work</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui tempore voluptatum molestias? Porro eaque reprehenderit perspiciatis similique, sed illum asperiores alias laudantium eligendi, eveniet repellendus, maiores quam at molestias!</p>  
@@ -48,7 +50,7 @@
     </div>
 </section>
 <!-- Section Resume -->
-<section>
+<section class="resume">
     <div>
     <h2><a name="resume"> </a>Resume</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui tempore voluptatum molestias? Porro eaque reprehenderit perspiciatis similique, sed illum asperiores alias laudantium eligendi, eveniet repellendus, maiores quam at molestias!</p>
@@ -70,7 +72,7 @@
 </div>
 </section>
 <!-- Section Contact -->
-<section>
+<section class="contact">
     <div>
     <h2><a name="contact"> </a>Contact</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui tempore voluptatum molestias? Porro eaque reprehenderit perspiciatis similique, sed illum asperiores alias laudantium eligendi, eveniet repellendus, maiores quam at molestias!</p>
@@ -86,13 +88,13 @@
         <br>
         <textarea name="message" cols="30" rows="5">Contact us</textarea>  
         <br>  
-        <button type="submit">Submition</button>
+        <button id="btn" type="submit">Submition</button>
       </form>
 </div>
 </section>
-<br>
-<a href="#Home"> Go Back Home </a>
 </main>
+<br>
+<a id="Top" href="#Home"> Go Back Home </a>
 <br>
 <footer>
     <H2><b>Website.Name</b></H2>
